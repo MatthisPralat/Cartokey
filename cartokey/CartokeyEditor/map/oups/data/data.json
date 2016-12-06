@@ -1,0 +1,326 @@
+[
+  {
+    "admin_fr": "Andorre",
+    "admin": "Andorra",
+    "Tauxcolor": "4",
+    "Taux": "<i>super test</i>"
+  },
+  {
+    "admin": "Spain",
+    "admin_fr": "Espagne",
+    "Tauxcolor": "4",
+    "Taux": "<i style=\"float:left;\">Taux</i> <b style=\"float:right;      font-weight: 100;\">22%</i>"
+  },
+  {
+    "admin": "Greece",
+    "admin_fr": "Grèce",
+    "Tauxcolor": "3",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Bulgarie",
+    "admin": "Bulgaria",
+    "Tauxcolor": "3",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Italie",
+    "admin": "Italy",
+    "Tauxcolor": "3",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Croatie",
+    "admin": "Croatia",
+    "Tauxcolor": "3",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Royaume-Uni",
+    "admin": "United Kingdom",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin": "Denmark",
+    "admin_fr": "Danemark",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "République tchèque",
+    "admin": "Czech Republic",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Irlande",
+    "admin": "Ireland",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Estonie",
+    "admin": "Estonia",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Lituanie",
+    "admin": "Lithuania",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Chypre",
+    "admin": "Cyprus",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Suède",
+    "admin": "Sweden",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin": "Slovenia",
+    "admin_fr": "Slovénie",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "France",
+    "admin": "France",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Roumanie",
+    "admin": "Romania",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin": "Austria",
+    "admin_fr": "Autriche",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin": "Hungary",
+    "admin_fr": "Hongrie",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Pologne",
+    "admin": "Poland",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Lettonie",
+    "admin": "Latvia",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Albanie",
+    "admin": "Albania",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Finlande",
+    "admin": "Finland",
+    "Tauxcolor": "2",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Allemagne",
+    "admin": "Germany",
+    "Tauxcolor": "1",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Portugal",
+    "admin": "Portugal",
+    "Tauxcolor": "1",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Maroc",
+    "admin": "Morocco",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Liechtenstein",
+    "admin": "Liechtenstein",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Pays-Bas",
+    "admin": "Netherlands",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Monténégro",
+    "admin": "Montenegro",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Norvège",
+    "admin": "Norway",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Islande",
+    "admin": "Iceland",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Saint-Marin",
+    "admin": "San Marino",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Russie",
+    "admin": "Russia",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin": "Republic of Serbia",
+    "admin_fr": "Serbie",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Slovaquie",
+    "admin": "Slovakia",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Suisse",
+    "admin": "Switzerland",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin": "Algeria",
+    "admin_fr": "Algérie",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Égypte",
+    "admin": "Egypt",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Belgique",
+    "admin": "Belgium",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Libye",
+    "admin": "",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Chypre",
+    "admin": "Cyprus",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Syrie",
+    "admin": "",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Ukraine",
+    "admin": "Ukraine",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Turquie",
+    "admin": "Turkey",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Vatican",
+    "admin": "",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Bosnie-Herzégovine",
+    "admin": "",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Biélorussie",
+    "admin": "Belarus",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Kosovo",
+    "admin": "",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Macédoine",
+    "admin": "",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Monaco",
+    "admin": "Monaco",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Moldavie",
+    "admin": "",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Malte",
+    "admin": "Malta",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Tunisie",
+    "admin": "Tunisia",
+    "Tauxcolor": "",
+    "Taux": ""
+  },
+  {
+    "admin_fr": "Luxembourg",
+    "admin": "Luxembourg",
+    "Tauxcolor": "",
+    "Taux": ""
+  }
+]

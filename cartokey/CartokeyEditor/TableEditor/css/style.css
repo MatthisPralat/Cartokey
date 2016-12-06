@@ -1,0 +1,546 @@
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                         GENERAL                                          */
+
+
+/* ---------------------------------------------------------------------------------------- */  
+
+body, html
+{
+  margin:0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+     background-color: #E8E8E8;
+
+}
+
+body {
+  font-family: "Roboto", "Trebuchet MS", sans-serif;
+
+}
+#container
+{
+  position: absolute;
+  top: 50px;
+  width: 100%;
+    padding: 0;
+  margin: 0;
+
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                         NavBar                                           */
+
+
+/* ---------------------------------------------------------------------------------------- */  
+
+#search
+{
+  padding: 5px;
+}
+
+#mainnav.navbar .navBtnLat:hover
+{
+  color: rgba(255,255,255,0.84);
+}
+
+
+#mainnav.navbar .navBtnLat
+{
+  float :right; 
+  display: inline-block;
+  margin-right: 15px;
+  line-height: 50px;
+  color: rgba(0,0,0,0.34);
+}
+
+
+
+
+#mainnav.navbar .navBtnLat span
+{
+  font-family: "lato" ,sans-serif;
+
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+
+
+}
+
+
+#MainNavBtn
+{
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+#MainNavBtn  i
+{
+  margin: 5px;
+  font-size: 2em;
+  opacity: 0.84;
+  visibility: visible;
+}
+#MainNavBtn i:hover
+{
+  color: white;
+}
+
+
+.dropdown-menu li>a:hover
+{
+  left: 0;
+  font-weight: 900;
+  background-color : #ea5b57;
+  color:white;
+  border:0 solid rgba(0,0,0,0);
+  
+}
+
+.dropdown
+{
+  position: fixed;
+      width: 50px;
+      display: inline-block;
+}
+.dropdown-menu 
+{
+  position: fixed;
+    top: 49px;
+    left: -2px;
+
+  background-color : #f1413c;
+  color : rgba(0,0,0,0.35);
+  padding: 15px 0px ;
+  margin: 0;
+  border:none;
+  border-radius: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.dropdown-menu li:hover
+{
+  color : rgba(0,0,0,0.74);
+}
+.dropdown-menu li span
+{
+
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  height: 15px;
+  margin-left: 15px;
+  padding-right: 30px;
+  font-family: 'lato' , sans-serif;
+  font-weight: 900; 
+  font-size: 15px;
+    line-height: 1;
+}
+
+.dropdown-menu .material-icons
+{ 
+
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  font-size: 20px ;
+  margin-left: 15px;
+  line-height: 20px;
+}
+
+
+.dropdown-menu .divider
+{
+  background-color : rgba(0,0,0,0.16);
+  padding: 0;
+  margin: 15px 0;
+}
+ 
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                         TABLE                                            */
+
+
+/* ---------------------------------------------------------------------------------------- */  
+
+/*header ---------------*/
+.dropdown
+{
+  width: 44px;
+}
+#searchbox
+{
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  float: right;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+#searchbox> input
+{
+  border-radius: 15px;
+  padding: 5px 15px;
+  background-color: white;
+}
+#searchbox> .material-icons
+{
+  display: inline-block;
+  float: left;
+  height: 30px;
+  font-size: 30px;
+  color: white;
+ 
+
+}
+  /*Icon ---------------*/
+  
+  #mainnav
+{
+  z-index: 10;
+  position: fixed;
+  border-radius: 0;
+  background-color : #f1413c;
+  height: 44px;
+  width: 100%;
+  display: block;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+   .mybtn
+   {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+   }
+    .mybtn> .material-icons
+  {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .mybtn:hover > .material-icons
+  {
+    color: white;
+  }
+
+  .arrow
+  {
+    margin-left: 5px;
+    color: #43ffce;
+  }
+
+table {
+  font-size: 0.8em;
+  border: none;
+  overflow: auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  min-width: 100%;
+}
+
+
+table td, table th {
+  -webkit-box-shadow:inset -1px -1px 0px 1px rgba(0,0,0,0.06);   
+  -moz-box-shadow:inset -1px -1px 0px 1px rgba(0,0,0,0.06);   
+  box-shadow:inset -1px -1px 0px 1px rgba(0,0,0,0.06);   
+  font-size: 0.9em;
+}
+thead
+{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+th, td {
+  word-break: break-all;
+  position: relative;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+th {
+
+  background-color: #2a3c58;
+  min-width: 100px;
+  margin: 0 15px !important;
+  text-align: center;
+  font-family: 'Roboto', verdana ,sans-serif;
+  color: rgba(0,0,0,0.64);
+  font-weight: 500;
+}
+
+.th-name
+{
+  font-family: "Roboto", "Trebuchet MS", sans-serif;
+  display: inline-block;
+/*    background-color: white;
+width: 100%;*/
+font-size: 1.1em;
+font-weight: 500;
+width: 100%;
+color:white;
+text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+
+td.name 
+{
+  font-weight: bold;
+}
+td.email {
+  color: #666;
+  text-decoration: underline;
+}
+/* zebra-striping seems to really slow down Opera sometimes */
+tr:nth-child(even) > td {
+  background-color: #f9f9f7;
+}
+tr:nth-child(odd) > td {
+  background-color: #ffffff;
+}
+tr.awesome{
+  color: red;
+}
+tr th:first-child 
+{
+ width: 10px !important;
+ background-color: #2a3c58;
+ text-align: center;
+ color: white;
+ padding: 0;
+ margin: 0;
+}
+tr td:first-child
+{
+  width: 10px !important;
+ box-shadow: none;
+ background-color: #2a3c58;
+ padding: 0;
+ margin: 0;
+ text-align: center;
+ color: white;
+}
+
+td
+{
+
+      overflow-y: auto;
+    overflow-x: hidden; 
+    max-height: 80px; 
+}
+
+
+
+   .some-handle {
+    display: block;
+    width: 99%;
+    background-image: url("../img/handle.png");
+    background-repeat: repeat-x;
+    height: 18px;
+    margin: 0;
+    opacity: 0.64;
+    cursor: pointer;
+  }
+
+  .mycheck
+  {
+    width: 100%; 
+    font-size: 0.6em;
+    background-color: #E8E8E8;
+    padding: 10px;
+  }
+
+  .mycheck span
+  {
+    padding: 5px;
+    margin-right: 5px;
+    text-align: left;
+    display: inline-block;
+
+  }
+  
+  /* just some random additional styles for a more real-world situation */
+  #msg {
+    color: #0a0;
+    text-align: center;
+  }
+
+
+  .optionstd
+  {
+    width: 100px;
+  }
+  .resizecol
+  {
+    cursor: ew-resize;
+    position: absolute;
+    width: 20px;
+    background-color: red;
+    display: block;
+    right: -10px;
+    z-index: 2;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+  }
+
+
+
+  .disabled {
+    opacity: 0.5;
+  }
+/*  .md-18
+  {
+    font-size: 12px;
+    margin: 2px;
+  }*/
+
+  .GeoData
+  {
+    overflow-y: auto;
+    overflow-x: hidden; 
+    max-height: 80px; 
+  }
+
+  .lock
+{
+    background-color: rgba(0,0,0,0.64);
+    cursor: no-drop;
+      pointer-events: none;
+}
+
+tbody tr:nth-child(even) > .lock {
+  background-color: #E9E9E7!important; 
+}
+tbody tr:nth-child(odd) > .lock  {
+  background-color: #f9f9f7!important;
+}
+#show-json
+{
+    position: relative;
+  float: right;
+  margin-top: 2px;
+  border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-color: #2a3c58;
+    border:none;
+    color: white;
+}
+#show-json>i
+{
+  top: 5px;
+  left: 0;
+  text-align: center;
+  position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                         JSON BTN                                          */
+
+
+/* ---------------------------------------------------------------------------------------- */  
+
+
+#jsonParent:before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #1c212b;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    right: 10px;
+    transform: rotate(45deg);
+
+}
+
+
+#jsonParent
+{
+  z-index: 12;
+  background-color: #1c212b;
+  color: #cc4945;
+  font-family: inherit;
+  font-size: 12px;
+  position: fixed;
+  width:  350px;
+  height: calc(100% - 200px);
+  top:65px;
+  right: 15px;
+   transition : all 0.2s;
+}
+
+#json
+{
+
+  color: rgba(255,255,255,0.64);
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#json::-webkit-scrollbar
+{
+    width: 4px;
+    height: 4px;
+    background-color: #1c212b;
+/*    border-left: 3px solid #1c212b;*/
+/*    box-shadow:inset 2px 0px 0px 0px #ccc;*/
+}
+
+#json::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: #f1413c;
+}
+#json::-webkit-scrollbar-corner
+{
+  background: #1c212b;
+}
+
+#json::-webkit-scrollbar-track  
+{
+  width: 2px;
+}
+
+#jsoniframe
+{
+  position: absolute;
+  top:50px;
+  height: calc( 100% - 50px);
+  width: 100%;
+}
+
+#show-json:hover
+{
+  background-color: white;
+  color:#f1413c;
+}

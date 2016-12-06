@@ -1,0 +1,442 @@
+[
+  {
+    
+    "admin_fr": "Albanie",
+    "formal_en": "Republic of Albania",
+    "iso_a2": "AL",
+    "iso_a3": "ALB",
+    "name": "Albania"
+  },
+  {
+    
+    "admin_fr": "Algérie",
+    "formal_en": "People's Democratic Republic of Algeria",
+    "iso_a2": "DZ",
+    "iso_a3": "DZA",
+    "name": "Algeria"
+  },
+  {
+    
+    "admin_fr": "Andorre",
+    "formal_en": "Principality of Andorra",
+    "iso_a2": "AD",
+    "iso_a3": "AND",
+    "name": "Andorra"
+  },
+  {
+    
+    "admin_fr": "Autriche",
+    "formal_en": "Republic of Austria",
+    "iso_a2": "AT",
+    "iso_a3": "AUT",
+    "name": "Austria"
+  },
+  {
+    
+    "admin_fr": "Biélorussie",
+    "formal_en": "Republic of Belarus",
+    "iso_a2": "BY",
+    "iso_a3": "BLR",
+    "name": "Belarus"
+  },
+  {
+    
+    "admin_fr": "Belgique",
+    "formal_en": "Kingdom of Belgium",
+    "iso_a2": "BE",
+    "iso_a3": "BEL",
+    "name": "Belgium"
+  },
+  {
+    
+    "admin_fr": "Bosnie-Herzégovine",
+    "formal_en": "Bosnia and Herzegovina",
+    "iso_a2": "BA",
+    "iso_a3": "BIH",
+    "name": "Bosnia and Herz."
+  },
+  {
+    
+    "admin_fr": "Bulgarie",
+    "formal_en": "Republic of Bulgaria",
+    "iso_a2": "BG",
+    "iso_a3": "BGR",
+    "name": "Bulgaria"
+  },
+  {
+    
+    "admin_fr": "Croatie",
+    "formal_en": "Republic of Croatia",
+    "iso_a2": "HR",
+    "iso_a3": "HRV",
+    "name": "Croatia"
+  },
+  {
+    
+    "admin_fr": "Chypre",
+    "formal_en": "Republic of Cyprus",
+    "iso_a2": "CY",
+    "iso_a3": "CYP",
+    "name": "Cyprus"
+  },
+  {
+    
+    "admin_fr": "République tchèque",
+    "formal_en": "Czech Republic",
+    "iso_a2": "CZ",
+    "iso_a3": "CZE",
+    "name": "Czech Rep."
+  },
+  {
+    
+    "admin_fr": "Danemark",
+    "formal_en": "Kingdom of Denmark",
+    "iso_a2": "DK",
+    "iso_a3": "DNK",
+    "name": "Denmark"
+  },
+  {
+    
+    "admin_fr": "Égypte",
+    "formal_en": "Arab Republic of Egypt",
+    "iso_a2": "EG",
+    "iso_a3": "EGY",
+    "name": "Egypt"
+  },
+  {
+    
+    "admin_fr": "Estonie",
+    "formal_en": "Republic of Estonia",
+    "iso_a2": "EE",
+    "iso_a3": "EST",
+    "name": "Estonia"
+  },
+  {
+    
+    "admin_fr": "Finlande",
+    "formal_en": "Republic of Finland",
+    "iso_a2": "FI",
+    "iso_a3": "FIN",
+    "name": "Finland"
+  },
+  {
+    
+    "admin_fr": "France",
+    "formal_en": "French Republic",
+    "iso_a2": "-99",
+    "iso_a3": "-99",
+    "name": "France"
+  },
+  {
+    
+    "admin_fr": "Allemagne",
+    "formal_en": "Federal Republic of Germany",
+    "iso_a2": "DE",
+    "iso_a3": "DEU",
+    "name": "Germany"
+  },
+  {
+    
+    "admin_fr": "Grèce",
+    "formal_en": "Hellenic Republic",
+    "iso_a2": "GR",
+    "iso_a3": "GRC",
+    "name": "Greece"
+  },
+  {
+    
+    "admin_fr": "Hongrie",
+    "formal_en": "Republic of Hungary",
+    "iso_a2": "HU",
+    "iso_a3": "HUN",
+    "name": "Hungary"
+  },
+  {
+    
+    "admin_fr": "Islande",
+    "formal_en": "Republic of Iceland",
+    "iso_a2": "IS",
+    "iso_a3": "ISL",
+    "name": "Iceland"
+  },
+  {
+    
+    "admin_fr": "Irlande",
+    "formal_en": "Ireland",
+    "iso_a2": "IE",
+    "iso_a3": "IRL",
+    "name": "Ireland"
+  },
+  {
+    
+    "admin_fr": "Italie",
+    "formal_en": "Italian Republic",
+    "iso_a2": "IT",
+    "iso_a3": "ITA",
+    "name": "Italy"
+  },
+  {
+    
+    "admin_fr": "Kosovo",
+    "formal_en": "Republic of Kosovo",
+    "iso_a2": "-99",
+    "iso_a3": "-99",
+    "name": "Kosovo"
+  },
+  {
+    
+    "admin_fr": "Lettonie",
+    "formal_en": "Republic of Latvia",
+    "iso_a2": "LV",
+    "iso_a3": "LVA",
+    "name": "Latvia"
+  },
+  {
+    
+    "admin_fr": "Libye",
+    "formal_en": "Libya",
+    "iso_a2": "LY",
+    "iso_a3": "LBY",
+    "name": "Libya"
+  },
+  {
+    
+    "admin_fr": "Liechtenstein",
+    "formal_en": "Principality of Liechtenstein",
+    "iso_a2": "LI",
+    "iso_a3": "LIE",
+    "name": "Liechtenstein"
+  },
+  {
+    
+    "admin_fr": "Lituanie",
+    "formal_en": "Republic of Lithuania",
+    "iso_a2": "LT",
+    "iso_a3": "LTU",
+    "name": "Lithuania"
+  },
+  {
+    
+    "admin_fr": "Luxembourg",
+    "formal_en": "Grand Duchy of Luxembourg",
+    "iso_a2": "LU",
+    "iso_a3": "LUX",
+    "name": "Luxembourg"
+  },
+  {
+    
+    "admin_fr": "Macedoine",
+    "formal_en": "Former Yugoslav Republic of Macedonia",
+    "iso_a2": "MK",
+    "iso_a3": "MKD",
+    "name": "Macedonia"
+  },
+  {
+    
+    "admin_fr": "Malte",
+    "formal_en": "Republic of Malta",
+    "iso_a2": "MT",
+    "iso_a3": "MLT",
+    "name": "Malta"
+  },
+  {
+    
+    "admin_fr": "Moldavie",
+    "formal_en": "Republic of Moldova",
+    "iso_a2": "MD",
+    "iso_a3": "MDA",
+    "name": "Moldova"
+  },
+  {
+    
+    "admin_fr": "Monaco",
+    "formal_en": "Principality of Monaco",
+    "iso_a2": "MC",
+    "iso_a3": "MCO",
+    "name": "Monaco"
+  },
+  {
+    
+    "admin_fr": "Monténégro",
+    "formal_en": "Montenegro",
+    "iso_a2": "ME",
+    "iso_a3": "MNE",
+    "name": "Montenegro"
+  },
+  {
+    
+    "admin_fr": "Maroc",
+    "formal_en": "Kingdom of Morocco",
+    "iso_a2": "MA",
+    "iso_a3": "MAR",
+    "name": "Morocco"
+  },
+  {
+    
+    "admin_fr": "Pays Bas",
+    "formal_en": "Kingdom of the Netherlands",
+    "iso_a2": "NL",
+    "iso_a3": "NLD",
+    "name": "Netherlands"
+  },
+  {
+    
+    "admin_fr": "Chypre",
+    "formal_en": "Turkish Republic of Northern Cyprus",
+    "iso_a2": "-99",
+    "iso_a3": "-99",
+    "name": "N. Cyprus"
+  },
+  {
+    
+    "admin_fr": "Norvège",
+    "formal_en": "Kingdom of Norway",
+    "iso_a2": "-99",
+    "iso_a3": "-99",
+    "name": "Norway"
+  },
+  {
+    
+    "admin_fr": "Pologne",
+    "formal_en": "Republic of Poland",
+    "iso_a2": "PL",
+    "iso_a3": "POL",
+    "name": "Poland"
+  },
+  {
+    
+    "admin_fr": "Portugal",
+    "formal_en": "Portuguese Republic",
+    "iso_a2": "PT",
+    "iso_a3": "PRT",
+    "name": "Portugal"
+  },
+  {
+    
+    "admin_fr": "Serbie",
+    "formal_en": "Republic of Serbia",
+    "iso_a2": "RS",
+    "iso_a3": "SRB",
+    "name": "Serbia"
+  },
+  {
+    
+    "admin_fr": "Roumanie",
+    "formal_en": "Romania",
+    "iso_a2": "RO",
+    "iso_a3": "ROU",
+    "name": "Romania"
+  },
+  {
+    
+    "admin_fr": "Russie",
+    "formal_en": "Russian Federation",
+    "iso_a2": "RU",
+    "iso_a3": "RUS",
+    "name": "Russia"
+  },
+  {
+    
+    "admin_fr": "Saint-Marin",
+    "formal_en": "Republic of San Marino",
+    "iso_a2": "SM",
+    "iso_a3": "SMR",
+    "name": "San Marino"
+  },
+  {
+    
+    "admin_fr": "Slovaquie",
+    "formal_en": "Slovak Republic",
+    "iso_a2": "SK",
+    "iso_a3": "SVK",
+    "name": "Slovakia"
+  },
+  {
+    
+    "admin_fr": "Slovénie",
+    "formal_en": "Republic of Slovenia",
+    "iso_a2": "SI",
+    "iso_a3": "SVN",
+    "name": "Slovenia"
+  },
+  {
+    
+    "admin_fr": "Espagne",
+    "formal_en": "Kingdom of Spain",
+    "iso_a2": "ES",
+    "iso_a3": "ESP",
+    "name": "Spain"
+  },
+  {
+    
+    "admin_fr": "Suède",
+    "formal_en": "Kingdom of Sweden",
+    "iso_a2": "SE",
+    "iso_a3": "SWE",
+    "name": "Sweden"
+  },
+  {
+    
+    "admin_fr": "Suisse",
+    "formal_en": "Swiss Confederation",
+    "iso_a2": "CH",
+    "iso_a3": "CHE",
+    "name": "Switzerland"
+  },
+  {
+    
+    "admin_fr": "Syrie",
+    "formal_en": "Syrian Arab Republic",
+    "iso_a2": "SY",
+    "iso_a3": "SYR",
+    "name": "Syria"
+  },
+  {
+    
+    "admin_fr": "Tunisie",
+    "formal_en": "Republic of Tunisia",
+    "iso_a2": "TN",
+    "iso_a3": "TUN",
+    "name": "Tunisia"
+  },
+  {
+    
+    "admin_fr": "Turquie",
+    "formal_en": "Republic of Turkey",
+    "iso_a2": "TR",
+    "iso_a3": "TUR",
+    "name": "Turkey"
+  },
+  {
+    
+    "admin_fr": "Ukraine",
+    "formal_en": "Ukraine",
+    "iso_a2": "UA",
+    "iso_a3": "UKR",
+    "name": "Ukraine"
+  },
+  {
+    
+    "admin_fr": "Royaume-Uni",
+    "formal_en": "United Kingdom of Great Britain and Northern Ireland",
+    "iso_a2": "GB",
+    "iso_a3": "GBR",
+    "name": "United Kingdom"
+  },
+  {
+    
+    "admin_fr": "Vatican",
+    "formal_en": "State of the Vatican City",
+    "iso_a2": "VA",
+    "iso_a3": "VAT",
+    "name": "Vatican"
+  },
+  {
+    
+    "admin_fr": "Maroc",
+    "formal_en": "Sahrawi Arab Democratic Republic",
+    "iso_a2": "EH",
+    "iso_a3": "ESH",
+    "name": "W. Sahara"
+  }
+]

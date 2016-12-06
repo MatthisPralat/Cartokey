@@ -1,0 +1,662 @@
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                      PRESENTATION                                        */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                            GENERAL                                         */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/*                                      POPUP - GENERAL                                     */
+/* ---------------------------------------------------------------------------------------- */
+
+/*le conteneur général de la popup  --------------------------*/
+.leaflet-popup-content-wrapper
+{
+border-radius: 4px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+}
+
+/*bouton pour fermer la popup   --------------------------*/
+.leaflet-popup-close-button
+{
+    top: -7px  !important;
+    right: -7px  !important; 
+    border-radius: 50% !important; 
+    background-color: white!important;
+    background: rgb(255, 255, 255)!important;
+    padding: 2px!important;
+    width: 14px!important;
+    height: 14px!important;
+    transition:all 0.2s;
+    font-size: 10px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+    color:red!important;
+}
+
+.leaflet-popup-close-button:hover
+{
+    font-size: 14px !important;
+  padding: 4px!important;
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)!important;
+}
+
+
+/*la taille du contenu   --------------------------*/
+.leaflet-popup-content
+{
+    max-width: 250px;
+}
+
+
+.leaflet-popup-content-wrapper
+{
+    overflow: hidden;
+
+}
+
+#custompopup>ul
+{
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    max-height: 100px;
+    overflow: auto;
+
+}
+::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: #fff;
+    border-left: 3px solid #fff;
+    box-shadow:inset 2px 0px 0px 0px #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: #2a8bed;
+    background: -moz-linear-gradient(top, #2a8bed 0%, #2a8bed 70%, #299ae5 100%)!important;
+    background: -webkit-linear-gradient(top, #2a8bed 0%,#2a8bed 70%,#299ae5 100%)!important;
+    background: linear-gradient(to bottom, #2a8bed 0%,#2a8bed 70%,#299ae5 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a8bed', endColorstr='#299ae5',GradientType=0 )!important;
+}
+
+
+#custompopup li
+{
+    margin-top: 5px;
+    list-style-type: none; 
+    text-decoration: none;
+}
+
+#custompopup li:after
+{
+    margin-top: 5px;
+    display: block;
+     clear:both;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.popup-txt-titre
+{
+    font-family: 'Lato',sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    margin-right: 5px;
+}
+.popup-txt-text
+{
+    text-align: center;
+    display: block;
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    margin-right: 5px;
+    width: 100%;
+}
+
+/*.popup-txt-text:after
+{
+   content: "";
+   display: block;
+   clear:both;
+}*/
+/* ---------------------------------------------------------------------------------------- */
+/*                                      POPUP - INTERIEUR                                   */
+/* ---------------------------------------------------------------------------------------- */
+#header-Popup
+{
+width: 400px;
+    height: 50px;
+    margin: 0 -75px;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: #2a8bed;
+    background: -moz-linear-gradient(top, #2a8bed 0%, #2a8bed 70%, #299ae5 100%)!important;
+    background: -webkit-linear-gradient(top, #2a8bed 0%,#2a8bed 70%,#299ae5 100%)!important;
+    background: linear-gradient(to bottom, #2a8bed 0%,#2a8bed 70%,#299ae5 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a8bed', endColorstr='#299ae5',GradientType=0 )!important;
+}
+
+#popup-title
+{
+    margin: 0 100px;
+    font-size: 1.5em;
+    font-family: 'Lato';
+    line-height: 50px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#popup-logo
+{
+    width: 75px;
+    float: right;
+}
+
+#popup-footer-description
+{
+    font-family: 'Lato',sans-serif;
+    font-size: 0.8em;
+    opacity: 0.46;
+    width: 175px;
+    float:left;
+}
+.popup-shadow
+{
+    bottom: 8px;
+    left: 0;
+    transform-origin: 50% 100%;
+    transform: skewX(50deg) skewY(0);
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    opacity: 0.3;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 16%, rgba(0,0,0,0.11) 49%, rgba(0,0,0,0.16) 83%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 16%,rgba(0,0,0,0.11) 49%,rgba(0,0,0,0.16) 83%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 16%,rgba(0,0,0,0.11) 49%,rgba(0,0,0,0.16) 83%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 );
+}
+.popup-shadow:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    padding: 1px;
+    bottom: -5px;
+    left: 45%;
+    background-color: black;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+92,000000+100&0+0,0.16+92,0+100 */
+background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.16) 92%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.16) 92%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.16) 92%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                            LEGEND                                        */
+
+
+/* ---------------------------------------------------------------------------------------- */
+#MenuLegend
+{
+    width: 60px;
+    height: 30px;
+    background: #f5f5f3;
+    border-radius: 2px;
+    position: absolute;
+    top: 5px;
+    right: 245px;
+    z-index: 1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: block;
+      transition: all 0.2s;
+}
+#MenuLegend.Menuhide
+{
+    right: -30px  !important;;
+}
+
+#MenuLegend.Menuhide + #legend-Contnair
+{
+    right: -250px !important;
+}
+
+#MenuLegend.Menuhide #MlegendArrow
+{    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent!important;
+    border-bottom: 10px solid transparent!important;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    border-left: 0px solid transparent!important;
+    border-right: 15px solid #2a8bed!important;
+
+}
+
+
+#MlegendArrow
+{    display: block;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    border-left: 15px solid #2a8bed;
+     border-right: 0px solid transparent!important;
+
+}
+#legend-Contnair
+{
+     right: 0;
+    position: absolute;
+    z-index: 10;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    overflow: auto;
+    transition: all 0.2s;
+
+}
+#legend-Contnair > li > i
+{
+    background-color: #131ACE;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+
+}
+
+
+#legend-Contnair > li 
+{
+display: inline-block;
+text-decoration: none;
+list-style-type: none;
+height: 15px;
+line-height: 15px;
+vertical-align: middle;
+margin: 0 15px;
+}
+
+#legend-Contnair > li > span
+{
+    display: inline-block;
+    margin: auto;
+}
+
+
+.legend
+{
+
+    
+    width: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#header-legend
+{
+
+    padding: 15px;
+    text-align: center;
+    background-color: #2a8bed;
+}
+
+#title-Legend
+{
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: white;
+    margin: 0 25px;
+    font-size: 1em;
+    font-family: 'Lato';
+    font-weight: 700;
+    /*color: rgba(0,0,0,0.64);*/
+    text-transform: uppercase;
+    /*text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+}
+.leaflet-container
+{
+    background-color:#c5e8ff;
+}
+
+.legend ul, .legend li
+{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.legend li
+{
+   padding-top: 5px;
+
+}
+
+.legend li:after
+{
+    margin-top: 5px;
+    display: block;
+    clear: both;
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.16);
+}
+
+.legend li span
+{
+    margin: auto;
+    display:table;
+}
+
+.legend ul
+{
+        max-height: 325px;
+
+    overflow: auto;
+}
+
+#custompopup
+{
+    overflow: auto;
+}
+
+.leaflet-container
+{
+    background-color:#c5e8ff;
+}
+   
+#footer-legend
+{
+
+}
+#legend-footer-description
+{
+    display: block;
+    font-family: 'Lato',sans-serif;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    opacity: 0.46;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+    text-align-last: center; 
+}
+
+#legend-logo
+{
+    margin: auto;
+    display: table;
+    width: 75px;
+}
+
+    .legend {
+        text-align: left;
+        line-height: 18px;
+        color: #555;
+    }
+    .legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                            TAG                                        */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+    .hovertag
+    {
+
+    }
+    .my-label 
+    {
+    position: absolute;
+    width:1000px;
+    font-size:20px;
+    }
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                            SELECTOR                                      */
+
+
+/* ---------------------------------------------------------------------------------------- */
+#map:before
+{
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    box-shadow:  inset 0 1px 3px rgba(0,0,0,0.12), inset 0 1px 2px rgba(0,0,0,0.24) !important;
+}
+
+.Menuhide + .MselectorOverflow {
+    max-height: 0px !important;
+
+}
+.Menuhide #MselectorArrow {
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent!important;
+    border-bottom: 10px solid transparent!important;
+    border-right: 15px solid white!important;
+
+  
+}
+
+#Mselector
+{
+    position: absolute;
+    background-color: white;
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+    bottom: 15px;
+    z-index: 2;
+    max-height: 250px;
+    width: 216px;
+    left: 10px;
+    box-shadow:  0 1px 3px rgba(0,0,0,0.12),  0 1px 2px rgba(0,0,0,0.24) !important;
+
+}
+
+
+
+#Menuselector
+{
+    width: 100%;
+    position: absolute;
+    height: 30px;
+    background-color: #2a8bed;
+    left: 0;
+    top: -30px;
+}
+#Menuselector i
+{
+    color: white;
+    font-size: 24px;;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+#Mselector ul
+{
+
+   padding: 0;
+   margin: 0;
+
+}
+#MselectorArrow
+{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 0;
+    height: 0;
+
+
+    border-left: 10px solid transparent ;
+  border-right: 10px solid transparent;
+  
+  border-top: 15px solid white;
+}
+.MselectorOverflow
+{
+    width: 100%;
+    max-height: 250px;
+    display: block;
+    overflow: auto;
+    transition: all 0.2s;
+}
+#Mselector  a
+{
+    position: relative;
+    display: block;
+    text-indent: 10px;
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Lato';
+   font-weight: 700;
+   color:  rgba(0,0,0,0.64);
+    border-bottom: 1px dotted rgba(0,0,0,0.16);
+    overflow: hidden;
+    transition: color 0.5s ease;
+}
+
+#Mselector  a:hover
+{
+
+color:white;
+
+
+}
+#Mselector a:after
+{
+    z-index: -1;
+    content: "";
+    left: -100%;
+    top:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2a8bed;
+    transition: left 0.4s ;
+
+-webkit-transition-timing-function: ease-out;
+opacity: 0.96;
+}
+
+
+#Mselector a:hover:after
+{
+    transition: left 0.2s ;
+left: 0;
+color:white;
+
+
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                            MAP                                           */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/*                                            LOGO                                          */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+#logo-map
+{
+    width: 75px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 2;
+}
+
+
+.info 
+{
+    padding: 6px 8px;
+    font: 1em Arial, Helvetica, sans-serif;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.info h4 
+{
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+.btn-edit-from-popup
+{
+    z-index: 5;
+}
+

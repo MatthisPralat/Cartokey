@@ -1,0 +1,146 @@
+{
+    "description": {
+        "TitreCarte": "titre",
+        "Auteur": "auteur",
+        "copyright": "copyright",
+        "motCles": "",
+        "Description": "description",
+        "tailleCarte": "",
+        "tailleCarteWidth": "",
+        "tailleCarteHeight": ""
+    },
+    "map": {
+        "MapZoom": "",
+        "position": "",
+        "lat": "",
+        "lon": "",
+        "fond-map": {
+            "layerlink": "http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png",
+            "layerattribute": "© OpenStreetMap contributors, © CartoDB"
+        }
+    },
+    "options": {
+        "partager": false,
+        "zoomcontrol": false,
+        "deplacement": false,
+        "molletteZoom": false,
+        "calquesSelectionnables": false,
+        "legend": false,
+        "titre map": true
+    },
+    "Layers": {
+        "layer1": {
+            "type": "GEO",
+            "Name": "Paul",
+            "Ltype": "geojson",
+            "GeoSelCat": "popup",
+            "popup": {
+                "formal_en": true,
+                "admin": true,
+                "macolonne02": true,
+                "admin_fr": true,
+                "name": false,
+                "iso3": false,
+                "NTEST": false,
+                "popup": false,
+                "macollone": false,
+                "fips": false
+            },
+            "OptionsCat": {
+                "test": "000000"
+            }
+        },
+        "layer2": {
+            "type": "GEO",
+            "Name": "layer2",
+            "Ltype": "geojson",
+            "GeoSelCat": "macolonne02",
+            "popup": {
+                "formal_en": true,
+                "admin": false,
+                "macolonne02": false,
+                "admin_fr": false,
+                "name": false,
+                "iso3": false,
+                "NTEST": false,
+                "popup": false,
+                "macollone": false,
+                "fips": false
+            },
+            "OptionsCat": {
+                "une autre info": "ff0000"
+            }
+        },
+        "layer3": {
+            "type": "GEO",
+            "Name": "layer3",
+            "Ltype": "geojson",
+            "GeoSelCat": "popup",
+            "popup": {
+                "formal_en": true,
+                "admin": false,
+                "macolonne02": false,
+                "admin_fr": false,
+                "name": false,
+                "iso3": false,
+                "NTEST": false,
+                "popup": false,
+                "macollone": false,
+                "fips": false
+            },
+            "OptionsCat": {
+                "test": "3f1919",
+                 "test3": "3f1919"
+            }
+        },
+        "layer4": {
+            "type": "GEO",
+            "Name": "layer4",
+            "Ltype": "geojson",
+            "GeoSelCat": "none",
+            "popup": {
+                "formal_en": false,
+                "admin": false,
+                "macolonne02": false,
+                "admin_fr": false,
+                "name": true,
+                "iso3": false,
+                "NTEST": false,
+                "popup": false,
+                "macollone": false,
+                "fips": false
+            },
+            "OptionsCat": {}
+        }
+    },
+    "Selecteur": {
+        "Bouton0": {
+            "Sel": [
+                "layer1",
+                "layer2",
+                "layer3",
+                "layer4"
+            ],
+            "Name": "Bouton0"
+        },
+        "Bouton1": {
+            "Name": "Bouton1",
+            "Sel": [
+                "layer1",
+                "layer2"
+            ]
+        }
+    },
+    "popup": {
+        "formal_en": "false",
+        "admin": "false",
+        "macolonne02": "false",
+        "admin_fr": "false",
+        "name": "false",
+        "iso3": "false",
+        "NTEST": "false",
+        "popup": "false",
+        "macollone": "false",
+        "fips": "false"
+    }
+}

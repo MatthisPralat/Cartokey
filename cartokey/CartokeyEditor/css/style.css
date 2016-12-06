@@ -1,0 +1,1398 @@
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 										PRESENTATION 										*/
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* 
+coucou
+*/
+
+/* 
+Autor : Matthis Pralat
+ */
+/* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
+/*  																						 */
+/*										NAVBAR												 */
+/* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+/* |			|----------------------------------------------------------------------------*/
+/* | Menu 		|----------------------------------------------------------------------------*/
+/* | Lateral	|----------------------------------------------------------------------------*/
+/* |			|----------------------------------------------------------------------------*/
+/* |			|----------------------------------------------------------------------------*/
+/* |			|----------------------		ArticleConteneur   ------------------------------*/
+/* |			|----------------------------------------------------------------------------*/
+/* |			|----------------------------------------------------------------------------*/
+/* |			|----------------------------------------------------------------------------*/
+/* |			|----------------------------------------------------------------------------*/
+
+/* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 										Table des matières 									*/
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/*----------I  - typography										 							*/
+/*-------------- a)Font 																	*/
+/*-------------- a)H 																		*/
+/*-------------- c)p,i,b,																	*/
+/*----------II - Input										 								*/
+/*----------I  - general										 							*/
+/*----------I  - general										 							*/
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 									I -	GENERAL 											*/
+
+
+/* ---------------------------------------------------------------------------------------- */
+body, html{
+	margin:0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#creerProjet:hover
+{
+	padding: 10px;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#creerProjet
+{
+	transition: all 0.2s;
+	line-height: 48px;
+	vertical-align: middle;
+	background-color : #f1413c;
+	color: white;
+	padding: 5px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: "Lato";
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#creerProjet>i, #creerProjet>span
+{
+		vertical-align: middle;
+		margin-left: 5px		
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 									II -	DISPOSITION ECRANS 								*/
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+#ArticleConteneur
+{
+	display: block;
+	position: fixed;
+	overflow: auto;
+	top:50px;
+	left: 350px;
+	width: calc( 100% - 350px);
+	height:calc( 100% - 50px);
+}
+
+#iframe
+{
+	width:  100%;
+	height: 100%; 
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+}
+
+.tablepopup
+{
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+#mainnav
+{
+	z-index: 10;
+	position: fixed;
+	border-radius: 0;
+	background-color : #f1413c;
+	height: 44px;
+	width: 100%;
+	display: block;
+	 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+#menuLateral
+{
+	 min-height: calc(100% - 50px );
+	 margin-top: 50px;
+	 position: absolute;
+	 width: 350px; 
+	 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	 border:1px solid rgba(0,0,0,0.16);
+}
+
+
+.onglet
+{
+	height: 35px;
+	padding: 0;
+	margin: 0;
+	background-color: #1c212b;
+	position: relative;
+	display: block;
+	float: left;
+	width: 33.33%;
+}
+
+.onglet>i
+{
+	border-right: 1px solid white;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	line-height: 35px;
+	vertical-align: middle;
+	color: white;
+	opacity: 0.64;
+}
+
+.onglet:hover,.onglet.active
+{
+	background-color: #F0F0F0;
+}
+.onglet:hover>i,.onglet.active>i
+{
+	color: #f1413c;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 									III -	TYPOGRAPHY 										*/
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									A-FontFace 												*/
+/* ---------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									B-Font 													*/
+/* ---------------------------------------------------------------------------------------- */																*/
+*
+{
+	font-family: 'Lato', sans-serif;
+	color: rgba(0,0,0,0.74);
+}
+h2
+{
+	font-family: 'Lato', sans-serif;
+	color: rgba(0,0,0,0.94);
+}
+h3
+{
+	font-family: 'Lato', sans-serif;
+	padding:  15px 0 ;
+	margin: 0 ;
+	color: rgba(0,0,0,0.60);
+	font-weight: 900;
+
+}
+h4
+{
+	font-family: 'Lato', sans-serif;
+	color: rgba(0,0,0,0.64);
+	background-color: rgba(0,0,0,0.04);
+	margin: 0;
+	padding:  10px 0;
+	width: 100%;  
+	text-indent: 15px;
+}
+
+/*-------------- c)p,i,b,																	*/
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 									II-INPUT 											*/
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+input[disabled]
+{
+	background-color: #CCC;
+	color: #888888;
+}
+
+
+/* 
+material design input */
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 									B-MATERIAL INPUT									*/
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									GROUP 													*/
+/* ---------------------------------------------------------------------------------------- */
+.group 			 
+{ 
+  position:relative; 
+  margin-top: 25px;
+  margin-bottom:15px; 
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									LABEL 													*/
+/* ---------------------------------------------------------------------------------------- */
+.group > label  
+{
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.group > textarea ~ label  
+{
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:20px;
+  top:15px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.toggle  ~ label 
+ {
+ 	color:#999; 
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:0px;
+  top:-30px;
+  font-size:12px;
+  color:#5264AE;
+ }
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									TOGGLE													*/
+/* ---------------------------------------------------------------------------------------- */
+
+.toggle.btn
+{
+	min-width: 100%;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* 									BUTTON 													*/
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* SIMPLE BUTTON ---------------------------------------------------------------------------------------- */
+
+.material-button {
+	text-align: center;
+	width: calc(100% - 30px);
+	max-width: calc(100% - 30px);
+	margin:15px;
+	padding: 5px 0;
+	  border: none;
+	  border-radius: 4px;
+      display: inline-block;
+      position: relative;
+      line-height: 32px;
+      border-radius: 2px;
+      font-size: 0.9em;
+      background-color: #4285f4;
+      color: #fff;
+      text-align: center;
+      font-family: 'lato', sans-serif;
+      text-transform: uppercase;
+
+      transition : all 0.2s;
+      	 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      	  overflow: hidden;
+    }
+.material-button:hover
+{
+	background-color: #4b97ff;
+	width: calc(100% - 20px);
+	max-width: calc(100% - 20px);
+	margin:15px 10px;
+	padding: 10px 0 ;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* BUTTON-POPUP ---------------------------------------------------------------------------------------- */
+.CalqueDel
+{
+ 	display: block;
+    padding: 15px;
+    background: #f1413c;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: 'Lato';
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    margin: 15px auto;
+    transition: all 0.2s;
+   }
+    .CalqueDel:hover
+{
+	font-size: 20px;
+	padding: 20px;
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.dft-btn
+{
+	padding: 5px 0;
+    display: block;
+    border: none;
+    color: #f1413c;
+    background-color: white;
+}
+/* BUTTON-POPUP ---------------------------------------------------------------------------------------- */
+
+
+.material-button-popup {
+	text-align: center;
+	width: calc(100% - 30px);
+	max-width: calc(100% - 30px);
+	margin:15px;
+	padding: 5px 0;
+	  border: none;
+	  border-radius: 4px;
+      display: inline-block;
+      position: relative;
+      line-height: 32px;
+      border-radius: 2px;
+      font-size: 0.9em;
+      background-color: #fff;
+      color: #4285f4;
+      text-align: center;
+      font-family: 'lato', sans-serif;
+      text-transform: uppercase;
+
+      transition : all 0.2s;
+      	 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      	  overflow: hidden;
+    }
+ .material-button-popup > i
+ {
+ 	float: left;
+ 	margin-left: 15px;
+ }
+.material-button-popup:hover
+{
+	font-weight: 900;
+	font-size: 1em;
+	width: calc(100% - 20px);
+	max-width: calc(100% - 20px);
+	margin:15px 10px;
+	padding: 10px 0 ;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* ROUND BUTTON ---------------------------------------------------------------------------------------- */
+
+.round-button
+{
+	background-color: #f1413c;
+	border-radius: 50%;
+	font-size: 2em;
+	width: 2.5em;
+	height: 2.5em;
+	margin:15px;
+	border: none;
+    color: #fff;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    transition : all 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	z-index: 11;
+}
+.round-button > .material-icons
+{
+		font-size: 1em;
+		line-height: 1em;
+}
+.round-button > span
+{
+	left: 0;
+	width: 100%;
+	bottom: 5px;
+	position: absolute;
+	font-size: 0.4em;
+	line-height: 2.5em;
+	text-align: center;
+	margin:auto;
+	font-style: italic;
+}
+.round-button:hover
+{
+	font-size: 2.5em;
+	width: 2.8em;
+	height: 2.8em;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/* ---------------------------------------------------------------------------------------- */
+/* 									INPUT													*/
+/* ---------------------------------------------------------------------------------------- */
+.group > input {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.group > input:focus{ outline:none; }
+
+.group > input.notempty ~ label, .group >input:focus ~ label		
+{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* 									textarea 												*/
+/* ---------------------------------------------------------------------------------------- */
+.group > textarea 				{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  font-size:16px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-radius: 2px;
+  font-family: "lato",sans-serif;
+  resize: none;
+  color: rgba(0,0,0,0.74);
+  		border:1px solid rgba(0,0,0,0.16);
+    border-radius: 2px;
+}
+.group > textarea:focus{ outline:none; }
+/* active state */
+.group > textarea.notempty ~ label, .group > textarea:focus ~ label		
+{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* 									BAR														*/
+/* ---------------------------------------------------------------------------------------- */
+/* BOTTOM BARS ================================= */
+.group > .bar
+{
+	position:relative;
+	display:block;
+ 	width:300px; 
+}
+.group > .bar:before, .bar:after 	
+{
+  content:'';
+  height:2px; 
+/*  width:50%;*/
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.group > .bar:before {
+  left:50%;
+}
+.group > .bar:after {
+  right:50%; 
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									Active														*/
+/* ---------------------------------------------------------------------------------------- */
+/* active state */
+input:not(:empty) ~ .bar:before, input:not(:empty) ~ .bar:after {
+  width:50%;
+}
+
+
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									MATERIAL ANIMATION										*/
+/* ---------------------------------------------------------------------------------------- */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									MATERIAL BACKGROUND									*/
+/* ---------------------------------------------------------------------------------------- */
+
+
+.label-card
+{
+	text-align: center;
+	width: 100%;
+	font-family: 'lato',sans-serif;
+ 	font-size:16px;
+ 	color: rgba(0,0,0,0.48);
+ 	font-weight: 900;
+	padding-top: 15px ;
+}
+
+
+.material-card
+{
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding: 15px;
+	margin: 0 15px ;
+	border:1px solid rgba(0,0,0,0.16);
+    border-radius: 2px;
+}
+
+.material-card:after
+{
+	 content:"";
+    display:block;
+    clear:both;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									TEXTAREA												*/
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 									III -	NAVBAR											*/
+
+
+/* ---------------------------------------------------------------------------------------- */	
+
+#mainnav.navbar .navBtnLat:hover
+{
+	color: rgba(255,255,255,0.84);
+	position: relative;
+}
+
+
+#mainnav.navbar .navBtnLat
+{
+	float :right; 
+	display: inline-block;
+	margin-right: 15px;
+	line-height: 50px;
+	color: rgba(0,0,0,0.34);
+}
+
+
+
+
+#mainnav.navbar .navBtnLat span
+{
+	font-family: "lato" ,sans-serif;
+
+	font-size: 24px;
+	font-weight: 900;
+	font-style: italic;
+	text-transform: uppercase;
+
+
+}
+
+
+#MainNavBtn
+{
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+}
+#MainNavBtn  i
+{
+	font-size: 2em;
+	opacity: 0.84;
+	visibility: visible;
+}
+#MainNavBtn i:hover
+{
+	color: white;
+}
+
+
+.dropdown-menu li>a:hover
+{
+	left: 0;
+	font-weight: 900;
+	background-color : #ea5b57;
+	color:white;
+	border:0 solid rgba(0,0,0,0);
+	
+}
+
+.dropdown
+{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.dropdown>button>i
+{
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+}
+
+.dropdown-menu 
+{
+	position: fixed;
+    top: 49px;
+    left: -2px;
+
+	background-color : #f1413c;
+	color : rgba(0,0,0,0.35);
+	padding: 15px 0px ;
+	margin: 0;
+	border:none;
+	border-radius: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.dropdown-menu li:hover
+{
+	color : rgba(0,0,0,0.74);
+}
+.dropdown-menu li span
+{
+
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	height: 15px;
+	margin-left: 15px;
+	padding-right: 30px;
+	font-family: 'lato' , sans-serif;
+	font-weight: 900; 
+	font-size: 15px;
+    line-height: 1;
+}
+
+.dropdown-menu .material-icons
+{	
+
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	height: 20px;
+	font-size: 20px ;
+	margin-left: 15px;
+	line-height: 20px;
+}
+
+
+.dropdown-menu .divider
+{
+	background-color : rgba(0,0,0,0.16);
+	padding: 0;
+	margin: 15px 0;
+}
+ 
+#map-name
+{
+
+	position: absolute;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 50px;
+    /* float: right; */
+    display: inline-block;
+    left: 50px;
+    font-family: 'Lato' , sans-serif;
+    font-size: 15px;
+    font-weight: 900px;
+    font-style: italic;
+    opacity: 0.64;
+    color: white;
+    z-index:-1;
+}
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 									IIV -	TABLE									*/
+
+
+/* ---------------------------------------------------------------------------------------- */	
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									A - PROJET TABLE										*/
+/* ---------------------------------------------------------------------------------------- */
+.Projet
+{
+	max-height: 60vh;
+    overflow-y: scroll;
+}
+table
+{
+	width: 100%;
+}	
+
+th
+{
+	text-align: center;
+	font-family: 'lato',sans-serif;
+	text-transform: uppercase;
+	opacity: 0.74;
+	font-weight: 900;
+	font-style: italic;
+ 
+}
+
+th[data-sort]
+{
+      cursor:pointer;
+}
+td
+{
+	padding: 5px 0;
+}
+
+td:not(:last-child)
+{
+	border-right: 1px solid rgba(0,0,0,0.08);
+}
+tr:nth-child(2n+1)
+{
+	background-color: rgba(0,0,0,0.06);
+}
+
+.td-date
+{
+	font-family: 'lato',sans-serif;
+	text-transform: uppercase;
+	opacity: 0.34;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+}
+table button
+{
+	margin: 0;
+	padding: 0;
+	width: 74px;
+	border:none;
+	background-color: inherit;
+
+}
+
+table button .material-icons
+{
+	opacity: 0.34;
+	text-align: center;
+	
+}
+
+table button:hover .material-icons
+{
+	opacity: 0.74;
+	text-align: left;
+	
+}
+
+#th-options
+{
+	width: 225px;
+}
+
+.td-options
+{
+	    width: 225px;
+}
+.td-name
+{
+	 font-family: 'lato',sans-serif;
+	text-indent: 5px;	
+	font-weight: 700;
+	opacity: 0.64;
+	font-weight: 900;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+
+.td-name:hover 
+{
+	font-family: 'lato',sans-serif;
+	text-indent: 10px;	
+	font-weight: 700;
+	opacity: 0.64;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 									IIV -	MODAL											*/
+
+
+/* ---------------------------------------------------------------------------------------- */								 						
+
+
+.modal-title
+{
+	font-family: 'lato', sans-serif;
+	font-size: 24px;
+	margin:  0;
+	background-color: inherit; 
+	text-indent: 0;
+	font-style: italic;
+	font-weight: 900;
+	display: inline-block;
+	width: inherit;
+}
+
+
+.close
+{
+	top:0;
+	margin: 0;
+	padding: 0;
+	height: 24px;
+	font-size: 48px;
+	color: #f1413c;
+	opacity: 0.64;
+
+}
+.close:hover
+{
+		color: #f1413c;
+		opacity: 1;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* 									B -	Contenu												*/
+
+/* ---------------------------------------------------------------------------------------- */	
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									 	 BaseMap											*/
+/* ---------------------------------------------------------------------------------------- */	
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* 									IIV -	OUTILS											*/
+
+
+/* ---------------------------------------------------------------------------------------- */	
+.top-15
+{
+	margin-top: 15px;
+}
+.right
+{
+	float: right;
+	margin-right: 15px;
+}
+
+.left
+{
+	float: left;
+	margin-left: 15px;
+
+}
+/* partie un peu spéciale pour des outils spécifiques*/
+/* ---------------------------------------------------------------------------------------- */
+/* 									JSON DEBUG 											*/
+/* ---------------------------------------------------------------------------------------- */
+.json-btn
+{
+	position: fixed;
+	bottom: 15px;
+	right: 115px;
+	background-color: #1c212b;
+}
+
+#jsonParent:before
+{
+	content: "";
+	display:block;
+	position: absolute;
+	background-color: #1c212b;
+	width: 50px;
+	height:50px;
+	bottom: -25px;
+	right: 125px;
+	transform:rotate(45deg);
+
+}
+
+
+#jsonParent
+{
+	background-color: #1c212b;
+	color: #cc4945;
+	font-family: inherit;
+	font-size: 12px;
+	position: fixed;
+	width:  350px;
+	height: calc(100% - 200px);
+	top:65px;
+	right: 15px;
+	 transition : all 0.2s;
+}
+
+#json
+{
+	color: rgba(255,255,255,0.64);
+	margin: 0;
+	margin-top: -33px;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x:hidden; 
+	position: relative;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#json::-webkit-scrollbar
+{
+    width: 4px;
+    height: 4px;
+    background-color: #1c212b;
+/*    border-left: 3px solid #1c212b;*/
+/*    box-shadow:inset 2px 0px 0px 0px #ccc;*/
+}
+
+#json::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: #f1413c;
+}
+#json::-webkit-scrollbar-corner
+{
+	background: #1c212b;
+}
+
+#json::-webkit-scrollbar-track  
+{
+	width: 2px;
+}
+
+#jsoniframe
+{
+	position: absolute;
+	top:50px;
+	height: calc( 100% - 50px);
+	width: 100%;
+}
+.preformatted {
+	font-family: monospace;
+	white-space: pre;
+}
+
+.round-button.json-btn:hover ~ #jsonParent
+{
+	    top: 38px;
+	    right: 28px;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* 									 	 Accorderon											*/
+/* ---------------------------------------------------------------------------------------- */
+/* Si l'outil éxiste déjà sur bootstrap il est biens trop chiant dans le nombre de truc qu'il utilise */
+
+.accordeonSelecteur
+{
+position: relative;
+font-family: "lato",sans-serif;
+text-transform: uppercase;
+width: 100%;
+font-size: 18px;
+font-weight: 900;
+color: rgba(0,0,0,0.64);
+background-color: rgba(0,0,0,0.06);
+}
+.accordeonRubrique
+{
+	overflow: hidden;
+	max-height: 0px;
+	-webkit-transition: max-height 0.6s ease; /* Safari */
+    transition:  max-height 0.6s ease;
+}
+.accordeonSelecteur i.material-animated
+{
+	transition:transform 0.4s;
+}
+.accordeonSelecteur.selected i.material-animated
+{
+	transform:rotate(270deg);
+}
+
+
+.accordeonSelecteur.selected + .accordeonRubrique
+{
+	max-height: 2000px;
+}
+
+.accordeonSelecteur.selected + .accordeonRubrique:hover, .accordeonSelecteur.selected + .accordeonRubrique:focus
+{
+	overflow: auto;
+}
+
+.accordeon-selecteur-contenu
+{
+
+	margin-left: 35px;
+	padding: 15px 0;
+}
+
+.Basemap.selected
+{
+	opacity: 1;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.Basemap
+{
+	position: relative;
+	transition:all 0.4s;
+	width: 60px;
+	height: 60px;
+	background-size: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	background-image: url(https://1.maps.nlp.nokia.com/maptile/2.1/maptile/newest/normal.day/6/30/24/256/png8?lg=eng&token=A7tBPacePg9Mj_zghvKt9Q&app_id=KuYppsdXZznpffJsKT24);
+	opacity:0.65;
+	margin-top: 2em;
+}
+.Basemap:hover
+{
+
+	opacity:1;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.Basemap > .BasemapDescription
+{
+	visibility: hidden;
+}
+.Basemap:hover >.BasemapDescription
+{
+	visibility: visible;
+}
+.BasemapDescription
+{
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	position: absolute;
+	bottom: 100%;
+	padding: 5px;
+	margin-top: 1em;
+	left: 0;
+
+}
+.basemapcontnair
+{
+	border-radius: 
+}
+.ajtCalq:after
+{
+	content: "";
+	display: block;
+	clear:both;
+}
+.ajtBtn
+{
+	padding: 5px 0;
+	display: block;
+	float: left;
+	width: 50%;
+	border:none;
+	color: #f1413c;
+	background-color: white;
+}
+.ajtBtn:hover
+{
+	background-color: #1c212b
+}
+
+.layer-hide
+{
+	width: 30px;
+	height: 100%;
+	position: absolute;
+	border: none;
+	color: white;
+	background-color: rgba(0,0,0,0.16);
+	overflow: hidden;
+}
+.layer-hide >i
+{
+	top: 30%;
+	right: 0;
+
+	position:absolute;
+	color:rgba(0,0,0,0.16);
+	width: 100%;
+	height: 100%;
+}
+.form-group
+{
+	margin-top: 15px;
+	text-align: center;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* 									 	 BaseMap											*/
+/* ---------------------------------------------------------------------------------------- */	
+
+
+
+
+/*----------IV   - MapContnair										 							*/
+/*
+#iframe
+{
+	position: fixed;
+	width: calc(66% - 350px);
+	height: 100%;
+	left: 350px;
+}*/
+
+
+
+
+
+/*PARTIE EDITEUR*/
+
+
+.lock
+{
+	background-color: #BBBBBB;
+	cursor: no-drop;
+	  pointer-events: none;
+}
+.lock:hover
+{
+	background-color: #BBBBBB !important;
+	cursor: no-drop !important;
+	  pointer-events: none !important;
+}
+
+.Fright
+{
+	float: right;
+}
+.labelright
+{
+	margin: 5px 0;
+}
+
+.sortable { list-style-type: none; margin: 0; padding: 0;}
+.sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1em;  }
+.sortable li span { position: absolute; margin-left: -1.3em; }*/
+
+#json{
+	overflow: auto;
+}
+
+.sortable li {
+    position: relative;
+    margin: 0 3px 3px 3px;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    font-size: 1em;
+}
+
+#Basemodelhtml
+{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	display: none;
+}
+	
+.cp-input
+{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	border: none;
+	background: none;
+}
+.cp-input:hover
+{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	border: none;
+	background: none;
+}
+
+
+
+#staticlegend li
+{
+	display: block;
+	border: 1px solid #BBB;
+	padding: 0;
+	margin: 0;
+	background: white;
+}
+#staticlegend li .ui-button-text
+{
+	display: block;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+ .tinymceM  span
+{
+
+	position: relative !important; 
+	display: inline-block;
+    margin-left: inherit !important; 
+	padding: inherit !important;
+	margin: inherit !important;
+}
+
+#staticlegend  .handle, #staticlegend  .handle2
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	background: #f0f0f0;
+	height: 20px;
+		
+}
+#staticlegend  .handle:after, #staticlegend  .handle2:after
+{
+	clear: both;
+	content: "";
+}
+#staticlegend  .handle i, #staticlegend  .handle2 i
+{
+	position: relative;
+	margin-left: 5px;
+	font-size: 15px;
+	vertical-align: middle;
+	height: 100%;
+}
+.dragleg
+{
+		color: #B3B3B3;
+
+}
+.delLegendel
+{
+	float: right;
+	display: inline-block;
+	margin-right: 5px;
+	color: #f1413c;
+
+}
